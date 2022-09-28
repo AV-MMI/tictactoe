@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'railway';
+	src: url('./fonts/raleway-variablefont_wght-webfont.woff2'),
+	url('./fonts/raleway-variablefont_wght-webfont.woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 10fr;
+	font-family: 'railway';
+}
+
+nav {
+	padding: 0.4rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-light {
+	background-color: #fef3c7;
+}
+
+#dev-nav {
+	width: 25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 10rem;
+}
+
+#theme-nav {
+	width: 5rem;
+	height: 2rem;
+	border: 1px solid black;
+	border-radius: 3rem;
+	display: flex;
+	align-items: center;
+}
+
+.theme-nav-light {
+	background-color: #c2410c;
+}
+
+.theme-circle {
+	border-radius: 30px;
+	background-color: #fef3c7;
+	width: 2.5rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.theme-circle-light {
+	border: 3px solid #fb923c;
+}
+
+#theme-circle img {
+	width: 2rem;
+}
+
+main {
+	padding: 1rem;
+}
+
+.main-light {
+	background-color: #fffbeb;
+}
+
+.gameboard-wrapper {
+	margin-right: 50%;
+	margin-left: 30%;
+}
+
+.gameboard-cont {
+	width: 40rem;
+	height: 30rem;
+	border: 3px solid #ca8a04;
+	display: grid;
+	grid-template-rows: 1fr 7fr 1fr;
+	background-color: #fef9c3;
+}
+
+.users-cont {
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.user {
+	width: 46%;
+	height: 70%;
+	background-color: #fefce8;
+	border: 0.23rem solid #ca8a04;
+	transition: 0.3s;
+}
+
+.user:hover {
+	background-color: white;
+}
+
+.board-cont {
+	grid-row: 2/3;
+	width: 96%;
+	border: 0.23rem solid #ca8a04;
+	background-color:  #fefce8;
+	justify-self: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0.5rem;
+	padding: 0.4rem;
+}
+
+.square {
+	place-self: stretch;
+	background-color: red;
+}
+
+.board-mssg {
+	grid-row: 3/4;
+}
