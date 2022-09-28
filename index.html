@@ -37,11 +37,27 @@
 	<main class="main-light">
 		<h1>Tic Tac Toe</h1>
 		<div id="gameboard-wrapper" class="gameboard-wrapper">
-			<div id="ai-menu"></div>
+			<div id="ai-menu" class="ai-menu">
+				<div id="ai-btn-cont" class="ai-btn-cont">
+					<button type="button" id="ai-btn" class="btn ai-btn">A.I</button>
+				</div>
+				<div id="ai-opt-cont" class="ai-opt-cont">
+					<ul>
+						<li class="ai-opt" id="easy-opt">Easy</li>
+						<li class="ai-opt" id="hard-opt">Hard</li>
+						<li class="ai-opt" id="impossible-opt">Impossible</li>
+					</ul>
+				</div>
+			</div>
+
 			<div id="gameboard-cont" class="gameboard-cont">
 				<div id="users-cont" class="users-cont">
-						<div id="left-user" class="user"></div>
-						<div id="right-user" class="user"></div>
+						<div id="left-user" class="user">
+							<span id="left-user-span" class="user-display">TEST</span>
+						</div>
+						<div id="right-user" class="user">
+							<span id="right-user-span" class="user-display">TEST</span>
+						</div>
 					</div>
 
 				<div id="board-cont" class="board-cont">
@@ -56,7 +72,11 @@
 						<div class="square"></div>
 					</div>
 
-				<div id="board-mssg" class="board-mssg"></div>
+				<div id="board-mssg" class="board-mssg">
+					<div id="mssg-cont" class="mssg-cont">
+						<span id="mssg-span" class="mssg-span">To start the game just click a square and start playing! </span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

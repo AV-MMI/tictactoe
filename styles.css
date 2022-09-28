@@ -4,6 +4,11 @@
 	url('./fonts/raleway-variablefont_wght-webfont.woff');
 }
 
+.btn {
+	padding: 0.2rem 0.3rem;
+	cursor: pointer;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -73,9 +78,71 @@ main {
 	background-color: #fffbeb;
 }
 
+h1 {
+	font-weight: 700;
+}
+
 .gameboard-wrapper {
-	margin-right: 50%;
-	margin-left: 30%;
+	margin-right: 30%;
+	margin-left: 25%;
+	display: flex;
+	position: relative;
+}
+
+.ai-menu {
+	z-index: 1;
+	width: 15rem;
+	height: 200px;
+	background-color: #fef9c3;
+	border: 3px solid #ca8a04;
+	position: absolute;
+	transition: 0.3s;
+	right: 39rem;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	display: flex;
+}
+
+.ai-btn-cont {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.ai-btn {
+	background-color: #fef3c7;
+	border: 2px solid #fcd34d;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	color: #78350f;
+	height: 95%;
+	margin-left: 0.3rem;
+	padding: 1rem 1rem;
+}
+
+.ai-opt-cont {
+	height: 100%;
+	width: 70%;
+}
+
+.ai-opt-cont > ul {
+	height: 100%;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.ai-opt {
+	font-size: 1.3rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.ai-opt:hover {
+	color: #713f12;
 }
 
 .gameboard-cont {
@@ -85,6 +152,8 @@ main {
 	display: grid;
 	grid-template-rows: 1fr 7fr 1fr;
 	background-color: #fef9c3;
+	font-weight: 700;
+	z-index: 2;
 }
 
 .users-cont {
@@ -100,6 +169,10 @@ main {
 	background-color: #fefce8;
 	border: 0.23rem solid #ca8a04;
 	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
 }
 
 .user:hover {
@@ -108,22 +181,42 @@ main {
 
 .board-cont {
 	grid-row: 2/3;
-	width: 96%;
+	width: 94%;
 	border: 0.23rem solid #ca8a04;
 	background-color:  #fefce8;
 	justify-self: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0.5rem;
+	gap: 0.3rem;
 	padding: 0.4rem;
 }
 
 .square {
 	place-self: stretch;
-	background-color: red;
+	background-color: #fde68a;
+	border: 2px solid #f59e0b;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.square:hover {
+	background-color: #fcd34d;
 }
 
 .board-mssg {
 	grid-row: 3/4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mssg-cont {
+	width: 96%;
+	height: 70%;
+	border: 0.23rem solid #ca8a04;
+	background-color: #fefce8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
