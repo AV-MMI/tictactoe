@@ -102,11 +102,15 @@ h1 {
 	background-color: #fef9c3;
 	border: 3px solid #ca8a04;
 	position: absolute;
-	transition: 0.3s;
+	transition: 0.5s;
 	right: 28rem;
 	border-top-left-radius: 1rem;
 	border-bottom-left-radius: 1rem;
 	display: flex;
+}
+
+.ai-menu-open {
+	right: 39rem;
 }
 
 .ai-btn-cont {
@@ -145,10 +149,15 @@ h1 {
 	font-size: 1.3rem;
 	cursor: pointer;
 	transition: 0.2s;
+	font-weight: 700;
 }
 
 .ai-opt:hover {
-	color: #713f12;
+	color: #e11d48;
+}
+
+.ai-opt-selected {
+	color: #38bdf8;
 }
 
 .gameboard-cont {
@@ -162,14 +171,14 @@ h1 {
 	z-index: 2;
 }
 
-.users-cont {
+.players-cont {
 	grid-row: 1/2;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
-.user {
+.player {
 	width: 46%;
 	height: 70%;
 	background-color: #fefce8;
@@ -181,8 +190,12 @@ h1 {
 	cursor: pointer;
 }
 
-.user:hover {
+.player:hover {
 	background-color: white;
+}
+
+.current-turn {
+	background-color: #d9f99d;
 }
 
 .board-cont {
