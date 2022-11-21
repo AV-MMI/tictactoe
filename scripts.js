@@ -350,7 +350,7 @@ const DOMFuncs = (() => {
 
 
 	const executeAIMove = (aiPlayer, difficulty) => {
-		if(gameFlow.players[aiPlayer].aiTurned){
+		if(gameFlow.players[aiPlayer].aiTurned && gameFlow.ai.active){
 			let squaresArr = obtainUnmarkedSquares(squares);
 
 			//easy
